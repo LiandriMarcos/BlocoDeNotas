@@ -3,15 +3,22 @@
     padding:0;
   }
   
+body {
+  background: rgb(35,42,101);
+  background: linear-gradient(159deg, rgba(35,42,101,1) 0%, rgba(26,30,57,1) 18%, rgba(15,18,41,1) 32%, rgba(11,13,32,1) 45%, rgba(4,5,15,1) 76%);
+}
+
   header{
     border-bottom: 1px solid #1b85dc;
-    height: 10vh;
+    height: 12.5vh;
     display:flex;
   }
   
   #logo{
     width: 30vw;
     height: 10vh;
+    margin-left: 2vw;
+    margin-top: 1vw;
   }
   
   #logo img{
