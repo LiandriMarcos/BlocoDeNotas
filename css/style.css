@@ -4,12 +4,12 @@
   }
   
 body {
-  background: rgb(35,42,101);
-  background: linear-gradient(159deg, rgba(35,42,101,1) 0%, rgba(26,30,57,1) 18%, rgba(15,18,41,1) 32%, rgba(11,13,32,1) 45%, rgba(4,5,15,1) 76%);
+  background: rgb(251,151,121);
+  background: linear-gradient(329deg, rgba(251,151,121,1) 0%, rgba(255,255,255,1) 85%);
 }
 
   header{
-    border-bottom: 1px solid #1b85dc;
+    border-bottom: 1px solid #D8460C;
     height: 12.5vh;
     display:flex;
   }
@@ -48,7 +48,7 @@ body {
   }
   
   #modal-view{
-    border:1px solid #1b85dc;
+    border:1px solid #D8460C;
     position: absolute;
     display:none;
     width: 90vw;
@@ -61,7 +61,7 @@ body {
   }
   
   #modal{
-    border:1px solid #1b85dc;
+    border:1px solid #D8460C;
     position: absolute;
     padding:2vh 2vw;
     display: none;

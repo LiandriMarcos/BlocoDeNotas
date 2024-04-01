@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div id="logo"><img src="./images/bloco.png" /></div>
+        <div id="logo"><img src="./images/blocoo.png"/></div>
         <div id="display"></div>
         <div id="user"></div>
   </header>
@@ -20,7 +20,7 @@
   <div id="controls">
     <div id="add-note">
        <a href="" >
-          <i class="bi bi-plus-square-fill" style="font-size: 2rem;"></i>
+          <i class="bi bi-plus-square-fill" style="font-size: 2rem; color: #D8460C"></i>
        </a>
    </div>
  </div>
@@ -28,7 +28,7 @@
  <div id="modal-view">
     <div id="close-modal-view">
        <a href="" >
-          <i class="bi bi-x-square" ></i>
+          <i style="color: #D8460C" class="bi bi-x-square" ></i>
       </a>
    </div>
    <div id="title-note"> </div>
@@ -36,32 +36,31 @@
    <div id="controls-note"> </div>
 </div>
 
-
 <div id="modal">
-    <div class="mb-3" style="border-bottom: 1px solid #999; display:flex; justify-content: space-between;">
+    <div class="mb-3" style="display:flex; justify-content: space-between;">
        <div>
           <a href="" id="btn-save-note">
-             <i class="bi bi-save" ></i>
+             <i style="color: #D8460C" class="bi bi-save" ></i>
           </a>
        </div>
      <div>
-       <a href="" style="color:#999" id="btn-close-modal">
+       <a href="" style="color:#D8460C" id="btn-close-modal">
          <i class="bi bi-x-square" ></i>
        </a>
      </div>
    </div>
    <input type="hidden" id="input-id" >
    <div class="mb-3">
-     <label for="title" class="form-label">Title</label>
+     <label for="title" style="color: #D8460C" class="form-label">Title</label>
      <input type="text" class="form-control" id="input-title" placeholder="Title">
    </div>
    <div class="mb-3">
-     <label for="content" class="form-label">Notes</label>
-     <textarea class="form-control" id="input-content" rows="4"></textarea>
+     <label for="content" style="color: #D8460C" class="form-label">Notes</label>
+     <textarea class="form-control" id="input-content" placeholder="Notes" rows="4"></textarea>
    </div>
 </div>
 </main>
-    <footer> </footer>
+   <footer> </footer>
 <script src="./js/script.js"></script>  
 </body>
 </html>
