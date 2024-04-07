@@ -137,19 +137,28 @@ const saveNote = (note) => {
       modalView.style.display = 'none';
     })
 
-    let divExc = document.createElement("div");
-    let iExc = document.createElement("i");
-    iExc.className = 'bi bi-trash3';
-    divExc.appendChild(iExc);
-    document.querySelector("#controls-note").appendChild(divExc);
+    // Ícone para excluir
+    let divDelete = document.createElement("div");
+    let iDelete = document.createElement("i");
+    iDelete.className = 'bi bi-trash3';
+    iDelete.style.color = 'red'; // Defina a cor desejada para o ícone de exclusão
+    divDelete.appendChild(iDelete);
+    document.querySelector("#controls-note").appendChild(divDelete);
 
-    divExc.addEventListener("click", (evt) =>{
+    divDelete.addEventListener("click", (evt) => {
       evt.preventDefault();
-      modal.style.display="none";
-      addNote.style.display = "block";
-      notes.style.display = "none";
+      deleteNote(note.id);
       modalView.style.display = 'none';
-    })
+      addNote.style.display = 'block';
+      notes.style.display = 'flex';
+    });
+    const deleteNote = (noteId) => {
+      let notes = loadNotes();
+      notes = notes.filter(note => note.id !== noteId); // Corrigido aqui, usando '!=='
+      notes = JSON.stringify(notes);
+      localStorage.setItem('notes', notes);
+      listNotes();
+    }
   }
 
   const dateFormat = (timestamp) =>{
